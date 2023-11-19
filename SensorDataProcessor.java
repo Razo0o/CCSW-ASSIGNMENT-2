@@ -78,8 +78,10 @@ out.write(data2[i][j] + "\t");
 }
 }
 out.close();
+
+//Error Handling -Razan Dahlawi 2114699
 } catch (Exception e) {
-System.out.println("Error= " + e);
+    System.err.println("Error: " + e.getMessage());
 }
 }
 
